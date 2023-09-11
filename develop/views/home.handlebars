@@ -1,0 +1,9 @@
+<h1>web CMS</h1>
+{{#each blogs as |blog| }}
+  <section class="card">
+    <a href="/models/Blog.js/{{blog.id}}" class="card-body">
+        <h3 class="card-title">{{blog.title}}</h3> 
+        <p class="card-text">{{blog.content}}</p>
+    </a>
+  </section>
+{{/each}}
